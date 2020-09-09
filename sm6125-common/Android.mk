@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter laurel_sprout ginkgo,$(TARGET_DEVICE)),)
+ifneq ($(filter laurel_sprout ginkgo laurus,$(TARGET_DEVICE)),)
 
 endif
