@@ -123,17 +123,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "WfdService",
-	owner: "xiaomi",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "CneApp",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -268,16 +257,19 @@ android_app_import {
 	product_specific: true,
 }
 
-dex_import {
-	name: "WfdCommon",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/WfdCommon.jar"],
-}
-
 prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.0-service-qti",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.2-service.widevine",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -290,12 +282,5 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "chargeonlymode",
-	owner: "xiaomi",
-	srcs: ["proprietary/bin/chargeonlymode"],
-	prefer: true,
 }
 
