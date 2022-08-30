@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi439/proprietary/vendor/bin/mm-qomx-ienc-test:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qomx-ienc-test \
     vendor/xiaomi/Mi439/proprietary/vendor/bin/sensors.qti.olive:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti.olive \
     vendor/xiaomi/Mi439/proprietary/vendor/bin/sensors.qti.pine:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti.pine \
+    vendor/xiaomi/Mi439/proprietary/vendor/bin/thermal-engine-olive:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine-olive \
     vendor/xiaomi/Mi439/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/xiaomi/Mi439/proprietary/vendor/etc/acdbdata/olive/SDM439_SKU1_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/olive/SDM439_SKU1_Bluetooth_cal.acdb \
     vendor/xiaomi/Mi439/proprietary/vendor/etc/acdbdata/olive/SDM439_SKU1_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/olive/SDM439_SKU1_General_cal.acdb \
@@ -3485,6 +3486,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi439/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
     vendor/xiaomi/Mi439/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
     vendor/xiaomi/Mi439/proprietary/vendor/lib64/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_reg.so \
+    vendor/xiaomi/Mi439/proprietary/vendor/lib64/libthermalfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalfeature.so \
     vendor/xiaomi/Mi439/proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so \
     vendor/xiaomi/Mi439/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/xiaomi/Mi439/proprietary/vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
