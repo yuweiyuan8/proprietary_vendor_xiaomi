@@ -1546,7 +1546,6 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     dpmserviceapp \
     QtiTelephonyService \
-    datastatusnotification \
     embms \
     imssettings \
     ims \
